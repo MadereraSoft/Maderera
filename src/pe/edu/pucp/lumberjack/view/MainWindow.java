@@ -55,11 +55,14 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuItem12 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenu14 = new javax.swing.JMenu();
+        jMenu15 = new javax.swing.JMenu();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenu16 = new javax.swing.JMenu();
         repor = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenu14 = new javax.swing.JMenu();
 
         jMenuItem10.setText("jMenuItem10");
 
@@ -207,6 +210,26 @@ public class MainWindow extends javax.swing.JFrame {
         jMenu4.setText("Personal");
         jMenuBar1.add(jMenu4);
 
+        jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/conta.png"))); // NOI18N
+        jMenu14.setText("Contabilidad");
+
+        jMenu15.setText("Documentos Generados");
+
+        jMenuItem15.setText("Revisión Ventas");
+        jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem15ActionPerformed(evt);
+            }
+        });
+        jMenu15.add(jMenuItem15);
+
+        jMenu14.add(jMenu15);
+
+        jMenu16.setText("Documentos Recibidos");
+        jMenu14.add(jMenu16);
+
+        jMenuBar1.add(jMenu14);
+
         repor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/reporte.png"))); // NOI18N
         repor.setText("Reportes");
         jMenuBar1.add(repor);
@@ -233,10 +256,6 @@ public class MainWindow extends javax.swing.JFrame {
         jMenu5.add(jMenuItem2);
 
         jMenuBar1.add(jMenu5);
-
-        jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/conta.png"))); // NOI18N
-        jMenu14.setText("Contabilidad");
-        jMenuBar1.add(jMenu14);
 
         setJMenuBar(jMenuBar1);
 
@@ -365,6 +384,17 @@ public class MainWindow extends javax.swing.JFrame {
         asaw.show();
     }//GEN-LAST:event_jMenuItem13ActionPerformed
 
+    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+        // TODO add your handling code here:
+        MCT_RevisionVentaWindow rvw = new MCT_RevisionVentaWindow();
+        jDesktopPane1.add(rvw);
+
+        int x= (jDesktopPane1.getWidth()/4);
+        int y= (jDesktopPane1.getHeight()/8);
+        rvw.setLocation(x, y);
+        rvw.show();
+    }//GEN-LAST:event_jMenuItem15ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -407,6 +437,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu14;
+    private javax.swing.JMenu jMenu15;
+    private javax.swing.JMenu jMenu16;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -421,6 +453,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
