@@ -213,6 +213,7 @@ public class MainWindow extends javax.swing.JFrame {
         jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/conta.png"))); // NOI18N
         jMenu14.setText("Contabilidad");
 
+        jMenu15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/docRecibido.png"))); // NOI18N
         jMenu15.setText("Documentos Generados");
 
         jMenuItem15.setText("Revisión Ventas");
@@ -225,6 +226,7 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenu14.add(jMenu15);
 
+        jMenu16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/docGenerado.png"))); // NOI18N
         jMenu16.setText("Documentos Recibidos");
         jMenu14.add(jMenu16);
 
