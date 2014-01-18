@@ -55,6 +55,8 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuItem12 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenu17 = new javax.swing.JMenu();
+        jMenuItem14 = new javax.swing.JMenuItem();
         jMenu14 = new javax.swing.JMenu();
         jMenu15 = new javax.swing.JMenu();
         jMenuItem15 = new javax.swing.JMenuItem();
@@ -208,6 +210,19 @@ public class MainWindow extends javax.swing.JFrame {
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/empleado.png"))); // NOI18N
         jMenu4.setText("Personal");
+
+        jMenu17.setText("Empleados");
+
+        jMenuItem14.setText("Mantenimiento");
+        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem14ActionPerformed(evt);
+            }
+        });
+        jMenu17.add(jMenuItem14);
+
+        jMenu4.add(jMenu17);
+
         jMenuBar1.add(jMenu4);
 
         jMenu14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/conta.png"))); // NOI18N
@@ -397,6 +412,17 @@ public class MainWindow extends javax.swing.JFrame {
         rvw.show();
     }//GEN-LAST:event_jMenuItem15ActionPerformed
 
+    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+        // TODO add your handling code here:
+        MRH_MantenimientoEmpleadoWindow mew = new MRH_MantenimientoEmpleadoWindow();
+        jDesktopPane1.add(mew);
+
+        int x= (jDesktopPane1.getWidth()/4);
+        int y= (jDesktopPane1.getHeight()/8);
+        mew.setLocation(x, y);
+        mew.show();
+    }//GEN-LAST:event_jMenuItem14ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -441,6 +467,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu14;
     private javax.swing.JMenu jMenu15;
     private javax.swing.JMenu jMenu16;
+    private javax.swing.JMenu jMenu17;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -455,6 +482,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
