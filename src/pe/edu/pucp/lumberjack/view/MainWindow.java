@@ -209,8 +209,9 @@ public class MainWindow extends javax.swing.JFrame {
         jMenuBar1.add(jMenu3);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/empleado.png"))); // NOI18N
-        jMenu4.setText("Personal");
+        jMenu4.setText("RRHH");
 
+        jMenu17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/emple.png"))); // NOI18N
         jMenu17.setText("Empleados");
 
         jMenuItem14.setText("Mantenimiento");
